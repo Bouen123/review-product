@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+       tailwind.config = {
+            theme: {screens: {
+                                'sm': '576px'
+                              },
+                extend: {
+                colors: {
+                    clifford: "#da373d",
+                    backgroundColor: "hsl(30, 38%, 92%)",
+                    buttonpricecolor: "hsl(158, 36%, 37%)",
+                    headingcolor: "hsl(212, 21%, 14%)",
+                    boxbackgroundcolor: "hsl(0, 0%, 100%)",
+                    paragraphscolor: "hsl(228, 12%, 48%)",
+                },
+                fontFamily: {
+                    one: ["Fraunces", "serif"],
+                    two: ["Montserrat", "sans-serif"],
+                },
+                },
+                },
+            };
+
+  </script>
+</head>
+<body class="m-0 p-0 box-border bg-backgroundColor">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="flex flex-col bg-boxbackgroundcolor rounded-[10px] sm:flex-row">
+            <img class="hidden sm:block w-[300px] min-h-full rounded-[10px] md:w-[300px] lg:w-[300px]" src="./images/image-product-desktop.jpg" alt="Desktop Image">
+            <img class="block sm:hidden w-[300px] min-h-full rounded-[10px]" src="./images/image-product-mobile.jpg" alt="Mobile Image">  
+            <div class="w-[300px] p-8">
+                <p class="text-emerald-500 font-two mb-[10px] tracking-widest">PERFUME</p>
+                <p class="text-4xl font-one font-bold pb-[20px]">Gabrielle Essence Eau De Parfum</p>
+                <p class="text-gray-400 font-two pb-[25px]">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <div class="flex gap-x-6 items-center mb-[50px]">
+                    <p class="font-montserrat font-sans text-emerald-500 text-3xl font-bold">$149.99</p>
+                    <p class="line-through text-gray-400">$169.99</p>
+                </div>
+                <button class="w-full h-[50px] rounded-[10px] flex items-center justify-center bg-lime-900 text-gray-50"><img class="p-2" src="./images/icon-cart.svg" alt="">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+</html>
